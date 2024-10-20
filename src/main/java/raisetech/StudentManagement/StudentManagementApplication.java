@@ -36,6 +36,7 @@ public class StudentManagementApplication {
     public String getStudentInfo() {
         Student student = repository.searchByName("TakahasiRyouji");
         return student.getName() + " " + student.getAge() + "歳";
+        //提出
     }
 
     @PostMapping("/student")
